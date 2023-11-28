@@ -16,7 +16,7 @@ import React from "react";
  * Need an image? Check out https://unsplash.com to download a image you
  * freely use on your site.
  */
-import image from "../images/motion-background.jpg";
+import image from "../images/socials/batman.jpg";
 
 const imageAltText = "purple and blue abstract background";
 
@@ -24,19 +24,22 @@ const imageAltText = "purple and blue abstract background";
  * Sort description that expands on your title on the Home component.
  */
 const description =
-  "I'm a UI/UX student studying at Barnett Technical University. I enjoy creating unique and simplistic user interfaces in creative ways.";
+  "Como desenvolvedor web Ruby on Rails, tenho experiência em criar aplicativos web escaláveis e de alta qualidade usando o framework Ruby  on Rails e o banco de dados PostgreSQL. Tenho conhecimento em configuração de ambiente de desenvolvimento, implementação de recursos de segurança e desempenho, além de integração com serviços externos. Além disso, tenho experiência em trabalhar com o GitHub para gerenciamento de código-fonte e colaboração com outros desenvolvedores. Sou capaz de trabalhar em equipe e lidar com problemas complexos de forma eficiente. Como defensor do desenvolvimento ágil, estou comprometido em fornecer software funcional e de qualidade aos meus clientes, trabalhando em estreita colaboração com eles para entender suas necessidades e fornecer feedback rápido ao longo do processo de desenvolvimento. Estou sempre procurando aprender novas tecnologias e aprimorar minhas habilidades de desenvolvimento para fornecer soluções inovadoras e eficazes para meus clientes. Estou animado para contribuir para projetos desafiadores e fazer parte de uma equipe dinâmica e criativa.";
+
 
 /**
  * List of some of skills or technologies you work on, are learning,
  * passionate about, or enjoy,
  */
 const skillsList = [
-  "Web design",
-  "User experience",
-  "Inclusive design",
-  "Focus group testing",
-  "Mobile user interfaces",
-  "Graphic design",
+  "PostgreSQL",
+  "GitHub",
+  "Javascript",
+  "Ruby on Rails",
+  "Desenvolvimento agil",
+  "Bootstrap",
+  "HTML",
+  "CSS",
 ];
 
 /**
@@ -45,7 +48,7 @@ const skillsList = [
  * about you on a professional level.
  */
 const detailOrQuote =
-  "I am passionate about solving problems in new creative ways to drive innovation. By leveraging my UI/UX experience I continually look for new and better ways to make tech accessible by all.";
+  "Eu sou apaixonado por resolver problemas de formas criativas e inovadoras. Utilizando minha experiência eu continuamente busco novas e melhores maneiras de tornar a tecnologia acessível a todos.";
 
 const About = () => {
   return (
@@ -60,8 +63,10 @@ const About = () => {
           textAlign: "center",
         }}
       >
-        <h2>About Myself</h2>
-        <p className="large">{description}</p>
+        <h2>Sobre min</h2>
+        <div style={{ textAlign: 'left' }}>
+          <p className="large">{description}</p>
+        </div>
         <hr />
         <ul
           style={{

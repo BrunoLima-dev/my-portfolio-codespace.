@@ -20,16 +20,21 @@ import PropTypes from "prop-types";
  * Need an image? Check out https://unsplash.com to download a photo you
  * freely use on your site.
  */
-import image from "../images/woman-with-tablet.jpg";
+import image from "../images/socials/pessoapc.jpeg";
+import myImage from "../images/socials/rubydevelop.png";
 
 const imageAltText = "Adult female in office setting leaning against a glass wall while holding a platinum Microsoft Surface Pro 7 in tablet mode preparing to write with Microsoft Surface Pen";
 
-const Home = ({ name, title }) => {
+const Home = ({ name, title, telefone, textColor }) => {
   return (
     <section id="home" className="min-height">
       <img className="background" src={image} alt="" />
-      <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem" }}>
+      <div style={{ position: "absolute", top: "5rem", left: "2rem", width: "17rem", color: textColor }}>
+        <div style={{ position: "absolute", top: "20rem", left: "5rem", width: "17rem", color: textColor }}>
+          <img src={myImage} style={{ marginRight: "5px", width: "50px", height: "50px" }} alt="My Image" />
+        </div>
         <h1>{name}</h1>
+        <h2>{telefone}</h2>
         <h2>{title}</h2>
       </div>
       <div style={{ position: "absolute", bottom: "3rem", left: "50%" }}>
@@ -37,16 +42,19 @@ const Home = ({ name, title }) => {
       </div>
     </section>
   );
+
 };
 
 Home.defaultProps = {
   name: "",
   title: "",
+  telefone: "",
 };
 
 Home.propTypes = {
   name: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
+  telefone: PropTypes.string.isRequired,
 };
 
 export default Home;
